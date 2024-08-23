@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- <header> -->
+        <div class="logo">
+            <img src="assets/hdmovies4u-logo.png" alt="HDMovies4U">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">720P Movies</a></li>
+                <li><a href="#">1080P Movies</a></li>
+                <li><a href="#">Bollywood 720P</a></li>
+                <li><a href="#">Hollywood Movies 720P</a></li>
+                <li><a href="#">Dual Audio 720P</a></li>
+            </ul>
+        </nav>
+            <!-- <h1>Movie Search App</h1> -->
+            <section class="streaming-platforms">
+                <div class="platform">
+                    <a href="https://www.netflix.com/">
+                        <img src="assets/Netflix.png" alt="Netflix">
+                    </a>
+                </div>
+                <div class="platform">
+                    <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_pds_gen_in_as_s_gm_sm1_mkw_symCJqBmk-dc?mrntrk=pcrid_694649444341_slid__pgrid_84577172528_pgeo_9301893_x__adext_23833119429_ptid_kwd-339065342343">
+                        <img src="assets/Prime_Video.jpg" alt="Prime Video">
+                    </a>
+                </div>
+                <div class="platform">
+                    <a href="https://www.hotstar.com/in/home?ref=%2Fin">
+                        <img src="assets/DSNP_Hotstar.png" alt="Disney+ Hotstar">
+                    </a>
+                </div>
+                <div class="platform">
+                    <a href="https://tv.apple.com/in">
+                        <img src="assets/Apple-TV-Logo.png" alt="Apple TV">
+                    </a>
+                
+                </div>
+                <div class="platform">
+                    <a href="https://www.zee5.com">
+                        <img src="assets/Zee5.jpg" alt="ZEE5">
+                    </a>
+                  
+                </div>
+                <div class="platform">
+                    <a href="https://www.sonyliv.com/">
+                        <img src="assets/Sonyliv.png" alt="Sony LIV">
+                    </a>
+                   
+                </div>
+                <div class="platform">
+                    <a href="https://ullu.app/#/home">
+                        <img src="assets/ullu.jpg" alt="Ullu">
+                    </a>
+                </div>
+                <div class="platform">
+                    <a href="https://altt.co.in/">
+                        <img src="assets/Altbalaji.jpg" alt="ALT Balaji">
+                    </a>
+                  
+                </div>
+                <div class="platform">
+                    <a href="https://voot-tv.en.download.it/android/download">
+                        <img src="assets/Voot.jpg" alt="Voot">
+                    </a>
+                </div>
+            </section>
+            <div class="container">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button id="searchButton">Search</button>
+            <div id="moviesContainer"></div>
+            <div id="pagination"></div>
+        </div>
+    <!-- </header> -->
+     <footer>
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 HDMovies4U. All rights reserved.</p>
+        <div class="links">
+            <a href="#">Home</a> | <a href="#">720P Movies</a> | <a href="#">1080P Movies</a> | <a href="#">Bollywood 720P</a> | <a href="#">Hollywood Movies 720P</a> | <a href="#">Dual Audio 720P</a>
+        </div>
+    </footer> 
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDMovies4U</title>
+   <style>
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+    background-color: #0e1f30;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    /* margin-right: 10px; */
+}
+
+.logo h1 {
+    font-size: 2em;
+    color: #00bfff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    background-color: #00bfff;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius:30px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color:  #0080ff  ;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #5ca5ee;
+}
+
+.streaming-platforms {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.platform img {
+    border-radius: 20px;
+    width: 30px;
+    transition: transform 0.3s;
+}
+
+.platform img:hover {
+    transform: scale(1.2);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/hdmovies4u-logo.png" alt="HDMovies4U">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">720P Movies</a></li>
+                <li><a href="#">1080P Movies</a></li>
+                <li><a href="#">Bollywood 720P</a></li>
+                <li><a href="#">Hollywood Movies 720P</a></li>
+                <li><a href="#">Dual Audio 720P</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for movies or TV shows also you can search by IMDb ID">
+            <button>Search</button>
+        </div>
+    </header>
+    <section class="streaming-platforms">
+        <div class="platform">
+            <img src="assets/Netflix.png" alt="Netflix">
+        </div>
+        <div class="platform">
+            <img src="assets/Prime_Video.jpg" alt="Prime Video">
+        </div>
+        <div class="platform">
+            <img src="assets/DSNP_Hotstar.png" alt="Disney+ Hotstar">
+        </div>
+        <div class="platform">
+            <img src="assets/Apple-TV-Logo.png" alt="Apple TV">
+        </div>
+        <div class="platform">
+            <img src="assets/Zee5.jpg" alt="ZEE5">
+        </div>
+        <div class="platform">
+            <img src="assets/Sonyliv.png" alt="Sony LIV">
+        </div>
+        <div class="platform">
+            <img src="assets/ullu.jpg" alt="Ullu">
+        </div>
+        <div class="platform">
+            <img src="assets/Altbalaji.jpg" alt="ALT Balaji">
+        </div>
+        <div class="platform">
+            <img src="assets/Voot.jpg" alt="Voot">
+        </div>
+    </section>
+</body>
+</html> -->
